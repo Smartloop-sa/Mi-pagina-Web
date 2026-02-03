@@ -195,7 +195,7 @@ body {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-right: 40px; /* 👈 ESTO lo trae hacia el centro */
+  margin-right: 60px; /* 👈 ESTO lo trae hacia el centro */
 }
 
 /* ===== LANGUAGE SWITCH ===== */
@@ -253,6 +253,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+
 
 
 
