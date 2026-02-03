@@ -188,13 +188,14 @@ body {
 /* ===== CONTROLES SUPERIORES ===== */
 .nav-right {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; /* NO al borde */
 }
+
 .controls {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-right: 60px;
+  margin-right: 40px; /* 👈 ESTO lo trae hacia el centro */
 }
 
 /* ===== LANGUAGE SWITCH ===== */
@@ -252,6 +253,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+
 
 
 
