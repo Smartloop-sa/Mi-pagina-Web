@@ -313,8 +313,10 @@ body {
 /* CARDS */
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 👈 3 columnas fijas */
   gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .feature-card {
@@ -346,6 +348,12 @@ body {
   font-size: 0.95rem;
   opacity: 0.85;
 }
+@media (max-width: 900px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 
