@@ -179,4 +179,59 @@ body {
 .lang-switch span:hover {
   color: var(--color-primary);
 }
+/* ===== CONTROLES SUPERIORES ===== */
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ===== LANGUAGE SWITCH ===== */
+
+.lang-switch {
+  display: flex;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.lang-switch .lang {
+  background: transparent;
+  border: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--color-muted);
+  transition: all 0.25s ease;
+}
+
+.lang-switch .lang.active {
+  background: var(--color-primary);
+  color: white;
+  font-weight: 600;
+}
+
+.lang-switch .lang:hover {
+  color: white;
+}
+
+/* ===== THEME TOGGLE ===== */
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--color-text);
+  transition: all 0.25s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
 
