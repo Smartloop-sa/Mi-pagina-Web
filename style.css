@@ -67,4 +67,7 @@ body {
 .logo {
   height: 40px;
 }
-
+.hero {
+  text-align: center;
+  align-items: center;
+}
