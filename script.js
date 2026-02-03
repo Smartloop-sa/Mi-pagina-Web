@@ -1,13 +1,23 @@
-const langBtn = document.getElementById("langBtn");
-let spanish = true;
+/* ===== THEME TOGGLE ===== */
 
-langBtn.addEventListener("click", () => {
-  if (spanish) {
-    document.querySelector("h1").innerText = "We Drive Industry with AI & Automation";
-    langBtn.innerText = "ES";
-  } else {
-    document.querySelector("h1").innerText = "Impulsamos la Industria con IA y Automatización";
-    langBtn.innerText = "EN";
-  }
-  spanish = !spanish;
+const themeToggle = document.getElementById("theme-toggle");
+let darkMode = true;
+
+themeToggle.addEventListener("click", () => {
+  darkMode = !darkMode;
+
+  document.documentElement.classList.toggle("light-theme");
+
+  themeToggle.textContent = darkMode ? "🌙" : "☀️";
+});
+
+/* ===== LANGUAGE SWITCH (VISUAL) ===== */
+
+const langButtons = document.querySelectorAll(".lang");
+
+langButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    langButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+  });
 });
