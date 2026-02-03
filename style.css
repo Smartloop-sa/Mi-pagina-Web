@@ -6,6 +6,13 @@
   --color-muted: #9ca3af;
 }
 
+.light-theme {
+  --color-bg: #f8fafc;
+  --color-secondary: #e2e8f0;
+  --color-text: #020617;
+  --color-muted: #475569;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -233,5 +240,6 @@ body {
   border-color: var(--color-primary);
   color: var(--color-primary);
 }
+
 
 
