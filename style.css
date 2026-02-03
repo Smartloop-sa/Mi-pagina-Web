@@ -151,24 +151,29 @@ body {
   width: 100%;
 }
 
-.lang-btn {
-  background: transparent;
-  border: 1px solid #334155;
-  color: var(--color-text);
-  padding: 6px 14px;
-  border-radius: 6px;
-  cursor: pointer;
+/* ===== LANGUAGE SWITCH ===== */
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 13px;
+  cursor: pointer;
+  color: var(--color-muted);
 }
 
-.lang-btn:hover {
-  border-color: var(--color-primary);
+.lang-switch span {
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+.lang-switch span.active {
+  color: white;
+  background: var(--color-primary);
+  font-weight: 600;
+}
+
+.lang-switch span:hover {
   color: var(--color-primary);
 }
-body {
-  padding-top: 72px;
-}
-
-
-
-
