@@ -315,7 +315,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 👈 3 columnas fijas */
   gap: 24px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -356,6 +356,7 @@ body {
 .features {
   max-width: 900px;
 }
+
 
 
 
