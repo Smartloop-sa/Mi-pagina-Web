@@ -405,7 +405,12 @@ body {
 
 .social-icons svg {
   width: 18px;
+  height: 18px;
   fill: white;
+  display: block;
+}
+.social-icons a {
+  font-size: 0; /* evita que herede tamaño */
 }
 
 .footer-column h4 {
@@ -424,11 +429,18 @@ body {
   font-size: 0.95rem;
 }
 
-@media (max-width: 900px) {
+/* RESPONSIVE FOOTER */
+@media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
   }
 }
+@media (min-width: 769px) {
+  .footer-container {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
 
 
 
