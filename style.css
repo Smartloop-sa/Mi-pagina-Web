@@ -440,23 +440,21 @@ body {
     grid-template-columns: 2fr 1fr 1fr 1fr;
   }
 }
+.solutions-page {
+  padding: 120px 8%;
+  background: #020617;
+  color: white;
+}
 
+.solutions-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.solution-card {
+  flex: 1;
+  background: #0b1220;
+  padding: 30px;
+  border-radius: 16px;
+}
