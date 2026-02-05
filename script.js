@@ -26,3 +26,7 @@ themeToggle.addEventListener("click", () => {
   document.documentElement.classList.toggle("light-theme");
   themeToggle.textContent = darkMode ? "🌙" : "☀️";
 });
+setTimeout(() => {
+  map.invalidateSize();
+}, 300);
+
