@@ -685,107 +685,7 @@ body {
   font-size: 13px;
   color: #94a3b8;
 }
-/* =========================
-   TEAM – SAITECH STYLE
-========================= */
 
-.team-section {
-  padding: 90px 8%;
-  background: #0b1220;
-  color: #0f172a;
-  text-align: center;
-}
-
-.team-section h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 60px;
-}
-
-/* GRID */
-.team-grid {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  overflow-x: auto;
-  padding: 40px 10px;
-}
-
-.team-grid::-webkit-scrollbar {
-  height: 6px;
-}
-
-.team-grid::-webkit-scrollbar-thumb {
-  background: rgba(0,170,255,.4);
-  border-radius: 10px;
-}
-
-
-/* CARD */
-.team-card {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 18px;
-  padding: 48px 22px 28px;
-  position: relative;
-  transition: all 0.35s ease;
-  box-shadow: 0 10px 30px rgba(2,6,23,0.12);
-}
-
-.team-card:hover {
-  transform: translateY(-10px);
-  box-shadow:
-    0 20px 45px rgba(56,189,248,0.35),
-    0 0 0 1px rgba(56,189,248,0.15);
-}
-
-/* AVATAR BURBUJA */
-.team-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 700;
-  color: #020617;
-  position: absolute;
-  top: -32px;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0 12px 30px rgba(14,165,233,0.45);
-}
-
-/* TEXTOS */
-.team-card h4 {
-  margin-top: 22px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #020617;
-  margin-bottom: 6px;
-}
-
-.team-role {
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  color: #0ea5e9;
-  margin-bottom: 4px;
-}
-
-.team-subrole {
-  display: block;
-  font-size: 12.5px;
-  color: #475569;
-  margin-bottom: 8px;
-}
-
-.team-location {
-  font-size: 12.5px;
-  color: #64748b;
-}
 /* =========================
    TEAM + MAP CONTAINER
 ========================= */
@@ -864,57 +764,6 @@ body {
 .marker-blue {
   background: #38bdf8;
 }
-/* ===== TEAM SECTION (SAITECH STYLE) ===== */
-
-.team-section {
-  background: #050b14;
-  padding: 80px 0;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: stretch;
-}
-
-/* ===== TEAM CARDS ===== */
-
-.team-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 25px;
-}
-
-.team-card {
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 16px;
-  padding: 24px;
-  text-align: center;
-  transition: all 0.35s ease;
-  cursor: pointer;
-  backdrop-filter: blur(6px);
-}
-
-.team-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 30px rgba(0, 170, 255, 0.35);
-}
-
-/* Bubble initials */
-.team-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  margin: 0 auto 16px;
-  background: radial-gradient(circle at top, #1ecbff, #0066ff);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 20px;
-  color: white;
-}
 
 /* Text styles */
 .team-card h4 {
@@ -940,9 +789,6 @@ body {
   color: #9aa3ad;
   font-size: 12px;
 }
-.leaflet-tile {
-  filter: invert(1) hue-rotate(200deg) saturate(1.4);
-}
 .marker-blue {
   width: 12px;
   height: 12px;
@@ -950,106 +796,97 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 12px rgba(0, 179, 255, 0.8);
 }
-.team-map-container {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 40px;
-  align-items: stretch;
+/* =========================
+   TEAM + MAP (FINAL)
+========================= */
+
+.team-map-section {
+  padding: 100px 8%;
+  background: #0b1220;
 }
 
+.team-map-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* TEAM CARDS */
 .team-grid {
   display: flex;
-  gap: 24px;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .team-card {
+  width: 220px;
   background: rgba(255,255,255,0.05);
   border-radius: 20px;
-  padding: 28px 22px 22px;
+  padding: 30px 22px 22px;
   text-align: center;
-  cursor: pointer;
   transition: all .3s ease;
-
-  /* CLAVE */
-  width: 220px;
-  min-width: 220px;
-  max-width: 220px;
-  flex: 0 0 auto;
+  cursor: pointer;
 }
-
 
 .team-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 25px rgba(0,170,255,.35);
+  box-shadow: 0 0 30px rgba(0,170,255,.4);
+  background: rgba(255,255,255,0.08);
 }
 
 .team-avatar {
-  width: 70px;
-  height: 70px;
-  margin: -55px auto 14px;
+  width: 72px;
+  height: 72px;
+  margin: -50px auto 14px;
   background: linear-gradient(135deg, #00aaff, #0077ff);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
 }
 
 .team-card h4 {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 6px;
 }
 
 .team-role {
-  color: #00aaff;
+  color: #00b3ff;
   font-weight: 600;
-  display: block;
+  font-size: 14px;
 }
 
 .team-subrole {
   color: #b0b0b0;
-  font-size: 14px;
-  display: block;
+  font-size: 13px;
   margin-top: 4px;
 }
 
 .team-location {
-  margin-top: 10px;
-  color: #aaa;
-  font-size: 14px;
+  margin-top: 8px;
+  color: #9aa3ad;
+  font-size: 13px;
 }
 
-.team-map {
-  background: #fff;
-  border-radius: 24px;
-  padding: 12px;
-}
-
-#map {
-  width: 100%;
-  height: 100%;
-  min-height: 380px;
-  border-radius: 18px;
-}
+/* MAPA */
 .team-map {
   background: #ffffff;
   border-radius: 24px;
-  padding: 12px;
-  min-height: 420px;
+  padding: 14px;
 }
 
 #map {
   width: 100%;
-  height: 420px;
+  height: 480px;
   border-radius: 18px;
 }
-.team-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,160,255,0.15);
-  background: rgba(255,255,255,0.08);
-}
+
 
 
 
