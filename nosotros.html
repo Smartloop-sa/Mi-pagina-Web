@@ -222,10 +222,13 @@ Nuestro enfoque es centrado en las personas y orientado a resultados: escuchamos
     zoomControl: false,
   }).setView([15, 0], 2);
 
-  L.tileLayer(
-    "https://{s}.basemaps.cartocdn.com/positron/{z}/{x}/{y}{r}.png",
-    { attribution: "© OpenStreetMap © CartoDB" }
-  ).addTo(map);
+L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+  {
+    attribution: "© OpenStreetMap © CARTO",
+  }
+).addTo(map);
+
 
   const markerMap = new Map();
 
@@ -262,6 +265,7 @@ Nuestro enfoque es centrado en las personas y orientado a resultados: escuchamos
 </body>
 
 </html>
+
 
 
 
