@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smartloop S.A. | Sobre Nosotros</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Leaflet (Mapa interactivo GRATIS) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+    <a href="index.html">
+      <img src="logo.png" alt="Smartloop S.A." class="logo">
+    </a>
+  </div>
+
+  <nav class="nav-center">
+    <a href="soluciones.html">Soluciones</a>
+    <a href="#casos">Casos de éxito</a>
+    <a href="#clientes">Clientes</a>
+    <a href="nosotros.html">Sobre nosotros</a>
+    <a href="#contacto">Contáctanos</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="controls">
+      <div class="lang-switch">
+        <button class="lang active" data-lang="es">ES</button>
+        <button class="lang" data-lang="en">EN</button>
+      </div>
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="about-hero">
+  <h1>Sobre Nosotros</h1>
+  <p>
+    Impulsamos la transformación digital mediante inteligencia artificial,
+    automatización e innovación tecnológica a escala global.
+  </p>
+</section>
+
+<!-- QUIÉNES SOMOS -->
+<section class="about-info">
+  <div class="about-text">
+    <h2>Quiénes Somos</h2>
+    <p>
+      Smartloop S.A. es una empresa tecnológica enfocada en desarrollar soluciones
+      avanzadas de inteligencia artificial, automatización industrial e IoT
+      para organizaciones públicas y privadas.
+    </p>
+  </div>
+
+  <div class="about-stats">
+    <div>
+      <strong>10+</strong>
+      <span>Años de experiencia</span>
+    </div>
+    <div>
+      <strong>50+</strong>
+      <span>Proyectos globales</span>
+    </div>
+    <div>
+      <strong>4</strong>
+      <span>Países</span>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPO GLOBAL -->
+<section class="team-section">
+  <h2>Nuestro Equipo Global</h2>
+  <p>Talento distribuido estratégicamente alrededor del mundo.</p>
+
+  <div class="team-grid">
+    <div class="team-card">
+      <h4>Ingeniería & IA</h4>
+      <span>Abu Dhabi – Dubai</span>
+    </div>
+
+    <div class="team-card">
+      <h4>Operaciones</h4>
+      <span>Panamá</span>
+    </div>
+
+    <div class="team-card">
+      <h4>Desarrollo</h4>
+      <span>Bolivia</span>
+    </div>
+
+    <div class="team-card">
+      <h4>Innovación</h4>
+      <span>Europa</span>
+    </div>
+  </div>
+</section>
+
+<!-- MAPA INTERACTIVO -->
+<section class="map-section">
+  <h2>Presencia Global</h2>
+  <div id="map"></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <img src="logo.png" alt="Smartloop S.A." class="footer-logo">
+      <p>
+        Transformamos empresas con soluciones avanzadas de
+        Inteligencia Artificial, IoT y automatización industrial
+        para un crecimiento escalable y sostenible.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Soluciones</h4>
+      <ul>
+        <li>AI Consulting</li>
+        <li>IoT Integration</li>
+        <li>Process Automation</li>
+        <li>Custom Development</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Empresa</h4>
+      <ul>
+        <li>Nosotros</li>
+        <li>Casos de Éxito</li>
+        <li>Clientes</li>
+        <li>Carreras</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Recursos</h4>
+      <ul>
+        <li>Documentación</li>
+        <li>API Reference</li>
+        <li>Soporte</li>
+        <li>Estado del Sistema</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const map = L.map("map").setView([24.4539, 54.3773], 2);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "© OpenStreetMap contributors"
+  }).addTo(map);
+
+  L.marker([24.4539, 54.3773])
+    .addTo(map)
+    .bindPopup("<b>Equipo IA</b><br>Abu Dhabi - Dubai");
+
+  L.marker([8.9824, -79.5199])
+    .addTo(map)
+    .bindPopup("<b>Operaciones</b><br>Panamá");
+
+  L.marker([-16.4897, -68.1193])
+    .addTo(map)
+    .bindPopup("<b>Desarrollo</b><br>Bolivia");
+
+  L.marker([51.5074, -0.1278])
+    .addTo(map)
+    .bindPopup("<b>Innovación</b><br>Europa");
+</script>
+
+</body>
+</html>
