@@ -207,32 +207,43 @@ Nuestro enfoque es centrado en las personas y orientado a resultados: escuchamos
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-  const map = L.map("map").setView([24.4539, 54.3773], 2);
+  const map = L.map("map", {
+    zoomControl: false,
+  }).setView([10, 0], 2);
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "© OpenStreetMap contributors"
-  }).addTo(map);
+  L.tileLayer(
+    "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+    {
+      attribution: "© OpenStreetMap © CartoDB",
+    }
+  ).addTo(map);
 
-  L.marker([24.4539, 54.3773])
-    .addTo(map)
-    .bindPopup("<b>Equipo IA</b><br>Abu Dhabi - Dubai");
+  const blueIcon = L.divIcon({
+    className: "custom-marker",
+    html: '<div class="marker marker-blue"></div>',
+    iconSize: [14, 14],
+  });
 
-  L.marker([8.9824, -79.5199])
-    .addTo(map)
-    .bindPopup("<b>Operaciones</b><br>Panamá");
+  document.querySelectorAll(".team-card").forEach(card => {
+    const lat = card.dataset.lat;
+    const lng = card.dataset.lng;
+    const name = card.querySelector("h4")?.innerText;
+    const role = card.querySelector(".team-role")?.innerText;
 
-  L.marker([-16.4897, -68.1193])
-    .addTo(map)
-    .bindPopup("<b>Desarrollo</b><br>Bolivia");
-
-  L.marker([51.5074, -0.1278])
-    .addTo(map)
-    .bindPopup("<b>Innovación</b><br>Europa");
+    if (lat && lng) {
+      L.marker([lat, lng], { icon: blueIcon })
+        .addTo(map)
+        .bindPopup(`<b>${name}</b><br>${role}`);
+    }
+  });
 </script>
+
+
 
 </body>
 
 </html>
+
 
 
 
