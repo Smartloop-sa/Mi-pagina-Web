@@ -934,6 +934,14 @@ body {
 .leaflet-tile {
   filter: invert(1) hue-rotate(200deg) saturate(1.4);
 }
+.marker-blue {
+  width: 12px;
+  height: 12px;
+  background: #00b3ff;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0, 179, 255, 0.8);
+}
+
 
 
 
