@@ -118,53 +118,50 @@ Nuestro enfoque es centrado en las personas y orientado a resultados: escuchamos
 <section class="team-map-section">
   <h2>Conoce nuestro equipo</h2>
   <p>Ingenieros jóvenes con años de experiencia en diferentes partes del mundo</p>
+<!-- CARTAS DEL EQUIPO -->
+<div class="team-grid">
 
-  <div class="team-map-container">
-
-    <!-- CARDS -->
-    <div class="team-grid">
-
-      <div class="team-card"
-           data-lat="8.9824"
-           data-lng="-79.5199"
-           data-country="Ciudad de Panamá - Panamá">
-        <div class="team-avatar">WC</div>
-        <h4>Wilmer Caussin</h4>
-        <span class="team-role">CEO – Director de Ventas</span>
-        <span class="team-subrole">Desarrollador de Negocios</span>
-        <span class="team-location">📍 Panamá</span>
-      </div>
-
-      <div class="team-card"
-           data-lat="24.4539"
-           data-lng="55.2962"
-           data-country="Abu Dhabi - UAE">
-        <div class="team-avatar">AA</div>
-        <h4>Alejandro Alvarez</h4>
-        <span class="team-role">COO – Director de IA</span>
-        <span class="team-subrole">Machine Learning & Estrategia</span>
-        <span class="team-location">📍 Abu Dhabi</span>
-      </div>
-
-      <div class="team-card"
-           data-lat="-16.5"
-           data-lng="-68.15"
-           data-country="La Paz - Bolivia">
-        <div class="team-avatar">RA</div>
-        <h4>Rodrigo Aliaga</h4>
-        <span class="team-role">CTO – Arquitecto IoT</span>
-        <span class="team-subrole">Infraestructura & Sistemas IoT</span>
-        <span class="team-location">📍 Bolivia</span>
-      </div>
-
-    </div>
-
-    <!-- MAPA -->
-    <div class="team-map">
-      <div id="map"></div>
-    </div>
-
+  <div class="team-card"
+       data-lat="8.9824"
+       data-lng="-79.5199"
+       data-country="Ciudad de Panamá - Panamá">
+    <div class="team-avatar">WC</div>
+    <h4>Wilmer Caussin</h4>
+    <span class="team-role">CEO – Director de Ventas</span>
+    <span class="team-subrole">Desarrollador de Negocios</span>
+    <span class="team-location">📍 Panamá</span>
   </div>
+
+  <div class="team-card"
+       data-lat="24.4539"
+       data-lng="55.2962"
+       data-country="Abu Dhabi - UAE">
+    <div class="team-avatar">AA</div>
+    <h4>Alejandro Alvarez</h4>
+    <span class="team-role">COO – Director de IA</span>
+    <span class="team-subrole">Machine Learning & Estrategia</span>
+    <span class="team-location">📍 Abu Dhabi</span>
+  </div>
+
+  <div class="team-card"
+       data-lat="-16.5"
+       data-lng="-68.15"
+       data-country="La Paz - Bolivia">
+    <div class="team-avatar">RA</div>
+    <h4>Rodrigo Aliaga</h4>
+    <span class="team-role">CTO – Arquitecto IoT</span>
+    <span class="team-subrole">Infraestructura & Sistemas IoT</span>
+    <span class="team-location">📍 Bolivia</span>
+  </div>
+
+</div>
+
+<!-- MAPA GRANDE ABAJO -->
+<div class="team-map-full">
+  <div id="map"></div>
+</div>
+
+
 </section>
 
 <!-- FOOTER -->
@@ -223,12 +220,9 @@ Nuestro enfoque es centrado en las personas y orientado a resultados: escuchamos
   }).setView([15, 0], 2);
 
 L.tileLayer(
-  "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-  {
-    attribution: "© OpenStreetMap © CARTO",
-  }
+  "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+  { attribution: "© OpenStreetMap © CartoDB" }
 ).addTo(map);
-
 
   const markerMap = new Map();
 
@@ -265,6 +259,7 @@ L.tileLayer(
 </body>
 
 </html>
+
 
 
 
