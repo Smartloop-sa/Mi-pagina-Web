@@ -535,19 +535,6 @@ body {
   text-align: center;
 }
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.team-card {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  text-align: center;
-}
-
 .map-section {
   padding: 80px 10%;
 }
@@ -678,66 +665,7 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 25px 50px rgba(56,189,248,0.25);
 }
-/* =========================
-   EQUIPO
-========================= */
 
-.team-section {
-  padding: 100px 8%;
-  background: #0b1220;
-  color: #fff;
-  text-align: center;
-}
-
-.team-section h2 {
-  font-size: 38px;
-  font-weight: 700;
-  margin-bottom: 60px;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 40px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* CARD */
-.team-card {
-  background: linear-gradient(135deg, #0f172a, #020617);
-  border-radius: 20px;
-  padding: 35px 25px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.45);
-  transition: all 0.3s ease;
-}
-
-.team-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 60px rgba(56,189,248,0.25);
-}
-
-/* AVATAR */
-.team-avatar {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-  font-weight: 700;
-  color: #020617;
-}
-
-/* TEXTO */
-.team-card h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
 
 .team-role {
   display: block;
@@ -758,6 +686,98 @@ body {
   font-size: 13px;
   color: #94a3b8;
 }
+/* =========================
+   TEAM – SAITECH STYLE
+========================= */
+
+.team-section {
+  padding: 90px 8%;
+  background: #0b1220;
+  color: #0f172a;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CARD */
+.team-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 48px 22px 28px;
+  position: relative;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.12);
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 20px 45px rgba(56,189,248,0.35),
+    0 0 0 1px rgba(56,189,248,0.15);
+}
+
+/* AVATAR BURBUJA */
+.team-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #020617;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 12px 30px rgba(14,165,233,0.45);
+}
+
+/* TEXTOS */
+.team-card h4 {
+  margin-top: 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #020617;
+  margin-bottom: 6px;
+}
+
+.team-role {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0ea5e9;
+  margin-bottom: 4px;
+}
+
+.team-subrole {
+  display: block;
+  font-size: 12.5px;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.team-location {
+  font-size: 12.5px;
+  color: #64748b;
+}
+
 
 
 
