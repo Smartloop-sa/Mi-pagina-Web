@@ -700,9 +700,16 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 60px;
+  margin-bottom: 16px;
 }
-
+.team-map-section > p {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px; /* 👈 separación correcta de las cards */
+  font-size: 16px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
 /* CONTENEDOR GENERAL */
 .team-map-container {
   display: grid;
@@ -893,6 +900,7 @@ body {
 .history-section {
   padding-top: 40px;
 }
+
 
 
 
