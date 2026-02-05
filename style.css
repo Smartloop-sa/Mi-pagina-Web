@@ -886,6 +886,14 @@ body {
   height: 480px;
   border-radius: 18px;
 }
+.about-hero {
+  padding: 70px 20px 30px;
+}
+
+.history-section {
+  padding-top: 40px;
+}
+
 
 
 
