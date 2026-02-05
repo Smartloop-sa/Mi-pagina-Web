@@ -458,3 +458,60 @@ body {
   padding: 30px;
   border-radius: 16px;
 }
+.solutions-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.solutions-title {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #4f9cff, #9b6cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.solutions-subtitle {
+  margin: 20px 0 60px;
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+/* CONTENEDOR HORIZONTAL */
+.solutions-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* RECUADROS */
+.solution-card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 30px;
+  width: 320px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.solution-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.solution-card p {
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+.solution-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.solution-card li {
+  margin-bottom: 10px;
+  color: #a7f3d0;
+}
+
