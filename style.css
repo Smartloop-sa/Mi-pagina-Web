@@ -835,6 +835,27 @@ body {
     height: 360px;
   }
 }
+/* =========================
+   MAP MARKERS
+========================= */
+
+.custom-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(56,189,248,0.9);
+}
+
+.marker-blue {
+  background: #38bdf8;
+}
+
 
 
 
