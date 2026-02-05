@@ -125,14 +125,20 @@ Nuestro enfoque es centrado en las personas y orientado a resultados: escuchamos
 
     <!-- PERSONA 1 -->
     <div class="team-card">
+      data-lat="8.9824"
+     data-lng="-79.5199"
+     data-country="Ciudad de Panamá - Panamá">
       <div class="team-avatar">WC</div>
-      <h4>Wilmer Caussin Ardaya</h4>
+      <h4>Wilmer Caussin</h4>
       <span class="team-role">CEO – Director de Ventas</span>
       <span class="team-subrole">Desarrollador de Negocios,...</span>
       <span class="team-location">📍 Ciudad de Panamá</span>
     </div>
  <!-- PERSONA 2 -->
     <div class="team-card">
+      data-lat="24.45118"
+     data-lng="5439696"
+     data-country="Abu Dhabi - Dubai">
       <div class="team-avatar">AA</div>
       <h4>Alejandro Alvarez</h4>
       <span class="team-role">COO – Director de IA</span>
@@ -141,6 +147,9 @@ Nuestro enfoque es centrado en las personas y orientado a resultados: escuchamos
     </div>
      <!-- PERSONA 3 -->
     <div class="team-card">
+      data-lat="-16.5"
+     data-lng="-68.15"
+     data-country="La Paz - Bolivia">
       <div class="team-avatar">RA</div>
       <h4>Rodrigo Aliaga</h4>
       <span class="team-role">CTO – Arquitecto IoT</span>
@@ -209,16 +218,16 @@ Nuestro enfoque es centrado en las personas y orientado a resultados: escuchamos
 <script>
   const map = L.map("map", {
     zoomControl: false,
-  }).setView([10, 0], 2);
+  }).setView([15, 0], 2);
 
-L.tileLayer(
-  "https://{s}.basemaps.cartocdn.com/positron/{z}/{x}/{y}{r}.png",
-  {
-    attribution: "© OpenStreetMap © CartoDB",
-  }
-).addTo(map);
+  L.tileLayer(
+    "https://{s}.basemaps.cartocdn.com/positron/{z}/{x}/{y}{r}.png",
+    { attribution: "© OpenStreetMap © CartoDB" }
+  ).addTo(map);
 
-  const blueIcon = L.divIcon({
+  const markerMap = new Map();
+
+  const icon = L.divIcon({
     className: "custom-marker",
     html: '<div class="marker marker-blue"></div>',
     iconSize: [14, 14],
@@ -227,22 +236,31 @@ L.tileLayer(
   document.querySelectorAll(".team-card").forEach(card => {
     const lat = card.dataset.lat;
     const lng = card.dataset.lng;
-    const name = card.querySelector("h4")?.innerText;
-    const role = card.querySelector(".team-role")?.innerText;
+    const country = card.dataset.country;
+    const name = card.querySelector("h4").innerText;
 
-    if (lat && lng) {
-      L.marker([lat, lng], { icon: blueIcon })
-        .addTo(map)
-        .bindPopup(`<b>${name}</b><br>${role}`);
-    }
+    if (!lat || !lng) return;
+
+    const marker = L.marker([lat, lng], { icon })
+      .addTo(map)
+      .bindTooltip(country, { permanent: false });
+
+    markerMap.set(card, marker);
+
+    card.addEventListener("mouseenter", () => {
+      map.flyTo([lat, lng], 5, { duration: 1.2 });
+      marker.openTooltip();
+    });
+
+    card.addEventListener("mouseleave", () => {
+      marker.closeTooltip();
+    });
   });
 </script>
-
-
-
 </body>
 
 </html>
+
 
 
 
