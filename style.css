@@ -939,6 +939,11 @@ body {
   font-size: 36px;
   color: #38bdf8; /* azul Smartloop */
 }
+.feature-card .icon i {
+  font-size: 40px;
+  color: #0ea5e9;
+}
+
 
 
 
