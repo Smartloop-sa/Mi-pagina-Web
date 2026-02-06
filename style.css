@@ -264,15 +264,26 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.4rem;
+  font-weight: 800;
   margin-bottom: 20px;
+  text-align: center;
+
+  background: linear-gradient(90deg, #4f9cff, #9b6cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+
 .hero p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin-bottom: 40px;
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  text-align: center;
 }
+
 
 /* BOTONES */
 .hero-buttons {
@@ -900,6 +911,7 @@ body {
 .history-section {
   padding-top: 40px;
 }
+
 
 
 
