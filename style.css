@@ -1111,6 +1111,55 @@ body {
 .nav-right {
   gap: 14px;
 }
+/* CASOS DE ÉXITO */
+.cases-hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  color: #ffffff;
+}
+
+.cases-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.cases-hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+.cases-section {
+  padding: 60px 5%;
+}
+
+.cases-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cases-header,
+.cases-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 2fr 1fr;
+  padding: 16px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.cases-header {
+  font-weight: 700;
+  border-bottom: 2px solid #38bdf8;
+}
+
+.cases-row {
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+}
+
+.cases-row span {
+  padding: 6px 12px;
+}
+
 
 
 
