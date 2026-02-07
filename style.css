@@ -1030,6 +1030,44 @@ body {
   color: #4f7cff;
   margin-top: 4px;
 }
+.cases-hero {
+  padding: 120px 80px 60px;
+  text-align: center;
+}
+
+.cases-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.cases-table {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cases-header,
+.cases-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr 2fr 1.5fr;
+  padding: 18px 0;
+}
+
+.cases-header {
+  border-bottom: 2px solid #e5e7eb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.cases-row {
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 15px;
+}
+
+.cases-row span {
+  padding-right: 12px;
+  line-height: 1.4;
+}
+
 
 
 
