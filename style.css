@@ -1251,6 +1251,15 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Invertir layout (imagen izquierda) */
+.case-card.reverse {
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.case-card.reverse .case-image {
+  order: -1;
+}
+
 
 
 
