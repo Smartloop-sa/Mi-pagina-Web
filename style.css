@@ -1259,6 +1259,29 @@ body {
 .case-card.reverse .case-image {
   order: -1;
 }
+.team-map-section {
+  padding: 100px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px; /* 👈 ESTA ES LA SEPARACIÓN CLAVE */
+}
+
+.team-map-full {
+  margin-top: 40px;
+}
+
+#map {
+  width: 100%;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
 
 
 
