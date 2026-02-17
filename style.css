@@ -1379,6 +1379,19 @@ textarea {
 .btn-primary:hover {
   opacity: 0.9;
 }
+.case-image img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.case-image img:hover {
+  transform: scale(1.03);
+}
+
 
 
 
