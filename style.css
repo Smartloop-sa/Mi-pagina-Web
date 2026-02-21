@@ -1391,81 +1391,27 @@ textarea {
 .case-image img:hover {
   transform: scale(1.03);
 }
-
 .video-modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0,0,0,0.7); /* menos oscuro */
   justify-content: center;
   align-items: center;
   z-index: 9999;
 }
 
 .video-container {
-  width: 80%;
-  max-width: 900px;
-  position: relative;
-}
-
-.video-container video {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.close-video {
-  position: absolute;
-  top: -30px;
-  right: 0;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-}
-.video-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.9);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.video-container {
-  width: 80%;
-  max-width: 900px;
-  position: relative;
+  width: 60%;           /* antes 80% */
+  max-width: 700px;     /* más compacto */
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
   text-align: center;
 }
 
 .video-container video {
   width: 100%;
   border-radius: 10px;
-  margin-top: 20px;
 }
-
-.back-button {
-  background: #00bcd4;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.back-button:hover {
-  background: #0097a7;
-}
-
-
-
-
-
-
-
-
-
-
 
