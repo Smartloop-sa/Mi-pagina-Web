@@ -1411,10 +1411,10 @@ textarea {
 }
 
 .video-container {
-  width: 500px;      /* 👈 más pequeño */
-  max-width: 85%;
+  width: 800px;      /* 👈 más pequeño */
+  max-width: 92%;
   background: #000;
-  padding: 24px;
+  padding: 28px;
   border-radius: 20px;
   position: relative;
 }
@@ -1449,3 +1449,14 @@ textarea {
 .close-modal:hover {
   transform: scale(1.1);
 }
+.video-container {
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+  transform: scale(1);
+  animation: popup 0.25s ease;
+}
+
+@keyframes popup {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
