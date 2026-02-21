@@ -48,3 +48,18 @@ function closeVideo() {
   video.currentTime = 0;
   modal.style.display = "none";
 }
+// Cerrar con tecla ESC
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    closeVideo();
+  }
+});
+
+// Cerrar haciendo click fuera del video
+window.onclick = function (event) {
+  const modal = document.getElementById("video-modal");
+  if (event.target === modal) {
+    closeVideo();
+  }
+};
+
