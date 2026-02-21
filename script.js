@@ -37,9 +37,7 @@ function openVideo(videoFile) {
   source.src = videoFile + ".mp4";
   video.load();
 
-  modal.style.display = "flex";
-  
-  video.muted = true; // necesario para autoplay
+  modal.classList.add("active");
   video.play();
 }
 
@@ -49,8 +47,11 @@ function closeVideo() {
 
   video.pause();
   video.currentTime = 0;
-  modal.style.display = "none";
+
+  modal.classList.remove("active");
 }
+
+
 // Cerrar con tecla ESC
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
@@ -66,5 +67,6 @@ window.onclick = function (event) {
   }
 };
 video.muted = false;
+
 
 
