@@ -1391,30 +1391,37 @@ textarea {
 .case-image img:hover {
   transform: scale(1.03);
 }
+/* =========================
+   VIDEO MODAL FIX DEFINITIVO
+========================= */
+
 .video-modal {
-  display: none;
+  display: none; /* 👈 SOLO ESTO */
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-
-  background: rgba(0, 0, 0, 0.7);
-
-  display: flex;
-  justify-content: center !important;
-  align-items: center !important;
-
+  inset: 0;
+  background: rgba(0,0,0,0.75);
   z-index: 9999;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.video-modal.active {
+  display: flex; /* 👈 SOLO cuando JS lo active */
 }
 
 .video-container {
-  width: 500px !important;
-  max-width: 90% !important;
+  width: 600px;
+  max-width: 90%;
+  background: #000;
+  padding: 20px;
+  border-radius: 18px;
+  position: relative;
 }
 
 .video-container video {
-  width: 100% !important;
-  aspect-ratio: 16 / 9 !important;
-  height: auto !important;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
 }
