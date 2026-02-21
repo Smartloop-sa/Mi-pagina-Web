@@ -1394,28 +1394,39 @@ textarea {
 .video-modal {
   display: none;
   position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(5px); /* efecto elegante */
-  justify-content: center;
-  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+
   z-index: 9999;
 }
 
 .video-container {
-  width: 400px;        /* 🔥 tamaño fijo pequeño */
-  max-width: 90%;
+  width: 450px !important;
+  max-width: 90% !important;
+  height: auto !important;
+
   background: #111;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-  text-align: center;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
 }
 
 .video-container video {
-  width: 100%;
-  height: 220px;       /* 🔥 altura fija */
-  object-fit: cover;
-  border-radius: 10px;
-}
+  width: 100% !important;
+  height: 250px !important;
+  max-height: 250px !important;
 
+  object-fit: contain !important;
+  border-radius: 10px;
+
+  display: block;
+}
