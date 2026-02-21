@@ -38,6 +38,9 @@ function openVideo(videoFile) {
   video.load();
 
   modal.style.display = "flex";
+  
+  video.muted = true; // necesario para autoplay
+  video.play();
 }
 
 function closeVideo() {
@@ -62,4 +65,6 @@ window.onclick = function (event) {
     closeVideo();
   }
 };
+video.muted = false;
+
 
