@@ -1409,24 +1409,12 @@ textarea {
 }
 
 .video-container {
-  width: 450px !important;
+  width: 500px !important;
   max-width: 90% !important;
-  height: auto !important;
-
-  background: #111;
-  padding: 20px;
-  border-radius: 12px;
-
-  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
 }
 
 .video-container video {
   width: 100% !important;
-  height: 250px !important;
-  max-height: 250px !important;
-
-  object-fit: contain !important;
-  border-radius: 10px;
-
-  display: block;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
 }
