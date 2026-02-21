@@ -29,4 +29,27 @@ themeToggle.addEventListener("click", () => {
 setTimeout(() => {
   map.invalidateSize();
 }, 300);
+function openVideo(videoFile) {
+  const modal = document.getElementById("video-modal");
+  const video = document.getElementById("local-video");
+  const source = document.getElementById("video-source");
+
+  source.src = "assets/videos/" + videoFile;
+
+  video.load();
+  video.play();
+
+  modal.style.display = "flex";
+}
+
+function closeVideo() {
+  const modal = document.getElementById("video-modal");
+  const video = document.getElementById("local-video");
+
+  video.pause();
+  video.currentTime = 0;
+
+  modal.style.display = "none";
+}
+
 
