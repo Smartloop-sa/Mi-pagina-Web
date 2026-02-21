@@ -1425,3 +1425,19 @@ textarea {
   aspect-ratio: 16 / 9;
   border-radius: 12px;
 }
+.close-modal {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #ffffff;
+  color: #000;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
