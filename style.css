@@ -1392,6 +1392,37 @@ textarea {
   transform: scale(1.03);
 }
 
+.video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.video-content {
+  position: relative;
+  width: 85%;
+  max-width: 900px;
+}
+
+.video-content video {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+.close-modal {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
 
 
 
