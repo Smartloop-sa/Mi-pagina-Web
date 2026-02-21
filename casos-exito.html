@@ -451,23 +451,22 @@
 </div>
 
 <!-- MODAL VIDEO -->
+  
 <div id="video-modal" class="video-modal">
   <div class="video-container">
-    
-    <button class="back-button" onclick="closeVideo()">
-      ← Regresar a Casos de Éxito
-    </button>
+    <span class="close-modal" onclick="closeVideo()">✕</span>
 
-    <video id="local-video" controls>
+    <video id="local-video" controls autoplay muted playsinline>
       <source id="video-source" src="" type="video/mp4">
-      Tu navegador no soporta video.
     </video>
-
   </div>
+</div>
+
 </div>
 
 </body>
 </html>
+
 
 
 
