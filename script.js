@@ -29,6 +29,7 @@ themeToggle.addEventListener("click", () => {
 setTimeout(() => {
   map.invalidateSize();
 }, 300);
+
 function openVideo(videoFile) {
   const modal = document.getElementById("video-modal");
   const video = document.getElementById("local-video");
@@ -67,6 +68,7 @@ window.onclick = function (event) {
   }
 };
 video.muted = false;
+
 
 
 
