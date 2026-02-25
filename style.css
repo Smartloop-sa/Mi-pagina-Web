@@ -548,7 +548,7 @@ body {
 ========================= */
 
 .history-section {
-  padding: 50px 8% 100px;
+  padding: 50px 8% 70px;
   background: #0b1220;
   color: #fff;
 }
@@ -621,7 +621,7 @@ body {
 ========================= */
 
 .values-section {
-  padding: 100px 8%;
+  padding: 70px 8%;
   background: #020617;
   color: #fff;
   text-align: center;
@@ -692,7 +692,7 @@ body {
 ========================= */
 
 .team-map-section {
-  padding: 100px 8%;
+  padding: 70px 8%;
   background: #0b1220;
 }
 
@@ -809,7 +809,7 @@ body {
 ========================= */
 
 .team-map-section {
-  padding: 100px 8%;
+  padding: 70px 8%;
   background: #0b1220;
 }
 
@@ -1163,7 +1163,7 @@ body {
 
 .cases-list {
   max-width: 1200px;
-  margin: 0 auto 100px;
+  margin: 0 auto 60px;
   padding: 0 20px;
 }
 
@@ -1260,7 +1260,7 @@ body {
   order: -1;
 }
 .team-map-section {
-  padding: 100px 0;
+  padding: 70px 8%;
 }
 
 .team-grid {
@@ -1282,10 +1282,10 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
 .mission-section {
-  padding: 100px 20px;
+  padding: 70px 20px;
   text-align: center;
   background: linear-gradient(135deg, #0f172a, #1e293b);
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .mission-container {
@@ -1467,18 +1467,18 @@ textarea {
 .main-footer {
   background: linear-gradient(to bottom, #0b1623, #0a1320);
   color: #cbd5e1;
-  padding: 70px 0 0 0;
-  margin-top: 120px;
+  padding: 50px 0 0 0;   /* 👈 menos aire arriba */
+  margin-top: 40px;      /* 👈 antes 120px */
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px 50px 40px;
+  padding: 0 40px 35px 40px; /* 👈 antes 50px */
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 40px; /* 👈 antes 60px */
 }
 
 .footer-column h4 {
@@ -1529,3 +1529,4 @@ textarea {
   font-size: 14px;
   color: #94a3b8;
 }
+
