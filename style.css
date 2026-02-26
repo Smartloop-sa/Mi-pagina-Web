@@ -1601,8 +1601,8 @@ body h1 {
 
 body {
   margin: 0;
-  background: #0b1120;
-  overflow-x: hidden;
+  background: #020617;
+  color: white;
 }
 
 /* Contenedor principal */
@@ -1654,6 +1654,55 @@ body {
 }
 section,
 footer {
+  background: transparent !important;
+}
+.hero-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(circle at top, #0b1120 0%, #020617 60%);
+  overflow: hidden;
+}
+
+/* Estrellas */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.15;
+}
+
+/* Waves */
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  animation: float 12s ease-in-out infinite alternate;
+}
+
+.wave-back {
+  animation-duration: 16s;
+}
+
+.wave-front {
+  animation-duration: 10s;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-80px);
+  }
+}
+
+/* IMPORTANTE */
+section,
+footer,
+header {
   background: transparent !important;
 }
 
