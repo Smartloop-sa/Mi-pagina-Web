@@ -64,7 +64,7 @@ body {
 }
 .services {
   padding: 100px 60px;
-  background: #0f172a;
+  background: transparent;
   text-align: center;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .service-card {
-  background: #020617;
+   background: transparent;
   padding: 40px 30px;
   border-radius: 14px;
   text-align: left;
@@ -363,7 +363,7 @@ body {
 }
 
 .footer {
-  background: #0b1220;
+  background: transparent;
   padding: 80px 20px;
 }
 
@@ -454,7 +454,7 @@ body {
 
 .solution-card {
   flex: 1;
-  background: #0b1220;
+  background: transparent;
   padding: 30px;
   border-radius: 16px;
 }
@@ -549,7 +549,7 @@ body {
 
 .history-section {
   padding: 50px 8% 70px;
-  background: #0b1220;
+ background: transparent;
   color: #fff;
 }
 
@@ -693,7 +693,7 @@ body {
 
 .team-map-section {
   padding: 70px 8%;
-  background: #0b1220;
+  background: transparent;
 }
 
 .team-map-section h2 {
@@ -810,7 +810,7 @@ body {
 
 .team-map-section {
   padding: 70px 8%;
-  background: #0b1220;
+  background: transparent;
 }
 
 .team-map-container {
@@ -1663,5 +1663,6 @@ body {
     transform: translateY(-40px);
   }
 }
+
 
 
