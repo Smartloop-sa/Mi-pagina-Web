@@ -1569,10 +1569,18 @@ h1 {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-background: linear-gradient(
-  90deg,
-  #6f5cff 0%,
-  #a855f7 40%,
-  #ec4899 70%,
-  #ff7849 100%
-);
+.gradient-title {
+  background: linear-gradient(
+    90deg,
+    #6f5cff 0%,
+    #a855f7 40%,
+    #ec4899 70%,
+    #ff7849 100%
+  );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
