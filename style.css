@@ -1709,4 +1709,12 @@ body {
   position: relative;
   z-index: 1;
 }
+body {
+  background: #0b1120;
+}
+
+.hero, header, section {
+  position: relative;
+  z-index: 1;
+}
 
