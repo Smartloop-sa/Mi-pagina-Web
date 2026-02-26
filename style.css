@@ -1583,4 +1583,17 @@ h1 {
   background-clip: text;
   color: transparent;
 }
+body h1 {
+  background: linear-gradient(
+    90deg,
+    #6f5cff 0%,
+    #a855f7 40%,
+    #ec4899 70%,
+    #ff7849 100%
+  );
+  
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
 
