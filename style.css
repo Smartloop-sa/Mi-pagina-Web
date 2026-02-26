@@ -1557,4 +1557,22 @@ textarea {
   line-height: 1.8;
   margin-bottom: 15px;
 }
-
+h1 {
+  background: linear-gradient(
+    90deg,
+    #7b61ff,
+    #c850c0,
+    #ff6a3d
+  );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+background: linear-gradient(
+  90deg,
+  #6f5cff 0%,
+  #a855f7 40%,
+  #ec4899 70%,
+  #ff7849 100%
+);
