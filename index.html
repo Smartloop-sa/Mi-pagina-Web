@@ -11,10 +11,29 @@
 
 </head>
 <body>
-  <div class="animated-bg">
-  <div class="gradient-wave"></div>
-  <div class="gradient-wave wave2"></div>
-  <div class="particles"></div>
+  
+<div class="animated-bg">
+  <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#ff7a18" />
+        <stop offset="40%" stop-color="#ff2fd1" />
+        <stop offset="80%" stop-color="#6f5cff" />
+        <stop offset="100%" stop-color="#00c6ff" />
+      </linearGradient>
+
+      <filter id="blur">
+        <feGaussianBlur stdDeviation="25" />
+      </filter>
+    </defs>
+
+    <path
+      d="M0,600 C300,500 600,700 900,600 C1200,500 1440,650 1440,650 L1440,800 L0,800 Z"
+      fill="url(#waveGradient)"
+      filter="url(#blur)"
+      class="wave"
+    />
+  </svg>
 </div>
 
   <header class="navbar">
@@ -193,6 +212,7 @@
 
 </body>
 </html>
+
 
 
 
