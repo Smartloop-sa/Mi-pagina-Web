@@ -1616,18 +1616,6 @@ body {
   overflow: hidden;
 }
 
-.animated-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    #0b1120 0%,
-    rgba(11,17,32,0.85) 40%,
-    #0b1120 100%
-  );
-}
-
 body {
   margin: 0;
   background: radial-gradient(circle at center, #0b1120 0%, #070c18 100%);
@@ -1652,7 +1640,8 @@ body {
 
 /* Animación suave */
 .wave {
-  animation: waveMove 12s ease-in-out infinite alternate;
+  animation: waveMove 10s ease-in-out infinite alternate;
+  opacity: 0.9;
 }
 
 @keyframes waveMove {
@@ -1660,13 +1649,14 @@ body {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-40px);
+    transform: translateY(-120px);
   }
 }
 section,
 footer {
   background: transparent !important;
 }
+
 
 
 
