@@ -1616,18 +1616,46 @@ body {
   overflow: hidden;
 }
 
+.animated-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #0b1120 0%,
+    rgba(11,17,32,0.85) 40%,
+    #0b1120 100%
+  );
+}
+
 /* Ondas degradadas */
 .gradient-wave {
   position: absolute;
-  width: 140%;
-  height: 140%;
-  bottom: -40%;
-  left: -20%;
-  background: radial-gradient(
-    circle at 30% 50%,
-    rgba(111, 92, 255, 0.4),
-    transparent 60%
-  ),
+  width: 160%;
+  height: 160%;
+  top: -20%;
+  left: -30%;
+
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(111, 92, 255, 0.65),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(236, 72, 153, 0.65),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(255, 120, 73, 0.55),
+      transparent 60%
+    );
+
+  filter: blur(120px);
+  animation: moveWave 20s ease-in-out infinite alternate;
+}
   radial-gradient(
     circle at 70% 60%,
     rgba(236, 72, 153, 0.4),
@@ -1650,10 +1678,10 @@ body {
 /* Animación suave */
 @keyframes moveWave {
   from {
-    transform: translateY(0px) translateX(0px);
+    transform: translate(0px, 0px) scale(1);
   }
   to {
-    transform: translateY(-50px) translateX(30px);
+    transform: translate(-60px, -40px) scale(1.1);
   }
 }
 
@@ -1681,3 +1709,4 @@ body {
   position: relative;
   z-index: 1;
 }
+
