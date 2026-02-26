@@ -12,27 +12,39 @@
 </head>
 <body>
   
-<div class="animated-bg">
-  <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
-    <defs>
-      <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#ff7a18" />
-        <stop offset="40%" stop-color="#ff2fd1" />
-        <stop offset="80%" stop-color="#6f5cff" />
-        <stop offset="100%" stop-color="#00c6ff" />
-      </linearGradient>
+<div class="hero-background">
+  <div class="stars"></div>
 
+  <svg class="wave wave-back" viewBox="0 0 1440 900" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="gradientBack" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#ff6a3d"/>
+        <stop offset="50%" stop-color="#ec4899"/>
+        <stop offset="100%" stop-color="#8b5cf6"/>
+      </linearGradient>
+    </defs>
+
+    <path d="M0,600 C400,450 900,700 1440,500 L1440,900 L0,900 Z"
+      fill="url(#gradientBack)"
+      opacity="0.6"/>
+  </svg>
+
+  <svg class="wave wave-front" viewBox="0 0 1440 900" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="gradientFront" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#8b5cf6"/>
+        <stop offset="50%" stop-color="#06b6d4"/>
+        <stop offset="100%" stop-color="#3b82f6"/>
+      </linearGradient>
       <filter id="blur">
-        <feGaussianBlur stdDeviation="40" />
+        <feGaussianBlur stdDeviation="50"/>
       </filter>
     </defs>
 
-   <path
-  d="M0,400 C300,300 600,500 900,380 C1200,250 1440,420 1440,420 L1440,800 L0,800 Z"
-  fill="url(#waveGradient)"
-  filter="url(#blur)"
-  class="wave"
-/>
+    <path d="M0,650 C400,500 900,750 1440,550 L1440,900 L0,900 Z"
+      fill="url(#gradientFront)"
+      filter="url(#blur)"
+      opacity="0.9"/>
   </svg>
 </div>
 
@@ -212,6 +224,7 @@
 
 </body>
 </html>
+
 
 
 
