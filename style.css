@@ -1678,8 +1678,8 @@ footer {
 .wave {
   position: absolute;
   width: 100%;
-  top: 50%;
-  height: 80vh;
+  bottom: 0;              /* 👈 que nazca desde abajo */
+  height: 70vh;           /* 👈 controla cuánto sube */
   animation: float 12s ease-in-out infinite alternate;
 }
 
@@ -1696,7 +1696,7 @@ footer {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-80px);
+    transform: translateY(-50px);
   }
 }
 
@@ -1706,6 +1706,7 @@ footer,
 header {
   background: transparent !important;
 }
+
 
 
 
