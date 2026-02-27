@@ -235,7 +235,7 @@ body {
   justify-content: flex-start;
 }
 .hero {
-  padding: 80px 20px 60px;
+  padding: 60px 20px 60px;
   text-align: center;
   color: white;
 }
@@ -1815,6 +1815,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
