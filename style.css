@@ -16,6 +16,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
+  overflow-x: hidden;
 }
 .hero {
   padding-top: 130px;   /* espacio real debajo del navbar */
@@ -1687,11 +1688,6 @@ body h1 {
 
 /* ===== ANIMATED BACKGROUND SMARTLOOP ===== */
 
-body {
-  margin: 0;
-  background: #020617;
-  color: white;
-}
 
 /* Contenedor principal */
 .animated-bg {
@@ -1704,11 +1700,6 @@ body {
   overflow: hidden;
 }
 
-body {
-  margin: 0;
-  background: radial-gradient(circle at center, #0b1120 0%, #070c18 100%);
-  overflow-x: hidden;
-}
 
 /* Fondo */
 .animated-bg {
@@ -1815,15 +1806,14 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body {
-  margin: 0;
-}
+
 
 .solutions-section {
   margin-top: 120px;
   position: relative;
   z-index: 1;
 }
+
 
 
 
