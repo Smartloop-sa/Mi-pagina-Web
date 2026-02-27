@@ -1678,7 +1678,7 @@ footer {
 .wave {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: -5vh;
   height: 110vh;
   pointer-events: none;
 }
@@ -1695,7 +1695,7 @@ footer {
 
 @keyframes waveBack {
   0% {
-    d: path("M0,650 C400,550 900,700 1440,600 L1440,900 L0,900 Z");
+    d: path("M0,650 C400,550 900,700 1440,600 L1440,1200 L0,1200 Z");
   }
   100% {
     d: path("M0,650 C300,450 1000,850 1440,700 L1440,900 L0,900 Z");
@@ -1704,10 +1704,10 @@ footer {
 
 @keyframes waveFront {
   0% {
-    d: path("M0,700 C400,600 900,750 1440,650 L1440,900 L0,900 Z");
+    d: path("M0,700 C400,600 900,750 1440,650 L1440,1200 L0,1200 Z");
   }
   100% {
-    d: path("M0,700 C450,650 850,720 1440,680 L1440,900 L0,900 Z");
+    d: path("M0,700 C450,650 850,720 1440,680 L1440,1200 L0,1200 Z");
   }
 }
 
@@ -1717,6 +1717,7 @@ footer,
 header {
   background: transparent !important;
 }
+
 
 
 
