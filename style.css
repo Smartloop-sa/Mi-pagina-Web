@@ -501,6 +501,25 @@ body {
 
   transition: all 0.4s ease;
 }
+.solution-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  pointer-events: none;
+
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(124, 108, 255, 0.25),
+    transparent 40%
+  );
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.solution-card:hover::after {
+  opacity: 1;
+}
 
 .solution-card::before {
   content: "";
@@ -1771,6 +1790,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
