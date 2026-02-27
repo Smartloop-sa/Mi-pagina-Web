@@ -301,12 +301,12 @@ body {
 
 .btn.secondary {
   border: 1px solid #2563eb;
-  color: #2563eb;
+  color: #ffffff;   /* 👈 BLANCO */
 }
 
 .btn.secondary:hover {
-  background: #2563eb;
-  color: white;
+  background: rgba(255,255,255,0.08);
+  color: #ffffff;
 }
 
 /* CARDS */
@@ -1717,6 +1717,7 @@ footer,
 header {
   background: transparent !important;
 }
+
 
 
 
