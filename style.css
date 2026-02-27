@@ -1685,7 +1685,7 @@ footer {
 
 /* Animación fuerte atrás */
 .wave-back path {
-  animation: waveBack 8s ease-in-out infinite alternate;
+  
 }
 
 /* Animación suave adelante */
@@ -1717,6 +1717,7 @@ footer,
 header {
   background: transparent !important;
 }
+
 
 
 
