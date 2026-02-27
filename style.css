@@ -452,7 +452,12 @@ body {
   border-radius: 16px;
 }
 .solutions-section {
-  padding: 80px 10%;
+  padding-top: 110px;   /* Compensa navbar fijo */
+  padding-bottom: 80px;
+
+  min-height: auto;
+  height: auto;
+
   text-align: center;
 }
 
@@ -1813,6 +1818,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
