@@ -1678,7 +1678,7 @@ footer {
 .wave {
   position: absolute;
   width: 100%;
-  bottom: -5vh;
+  bottom: -15vh;
   height: 110vh;
   pointer-events: none;
 }
@@ -1717,6 +1717,7 @@ footer,
 header {
   background: transparent !important;
 }
+
 
 
 
