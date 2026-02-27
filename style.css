@@ -5,7 +5,6 @@
   --color-text: #e5e7eb;
   --color-muted: #9ca3af;
 }
-
 .light-theme {
   --color-bg: #f8fafc;
   --color-secondary: #e2e8f0;
@@ -684,7 +683,7 @@ body {
   transition: all 0.4s ease;
 }
 
-.value-card:before {
+.value-card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -694,7 +693,11 @@ body {
     135deg,
     rgba(124, 108, 255, 0.15),
     transparent 60%
-  )
+  );
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
 }
 .value-card h4 {
   font-size: 20px;
@@ -1771,6 +1774,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
