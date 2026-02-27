@@ -1678,8 +1678,8 @@ footer {
 .wave {
   position: absolute;
   width: 100%;
-  bottom: -40vh;
-  height: 110vh;
+  bottom: -350vh;
+  height: 120vh;
   pointer-events: none;
 }
 
@@ -1698,7 +1698,7 @@ footer {
     d: path("M0,650 C400,550 900,700 1440,600 L1440,1200 L0,1200 Z");
   }
   100% {
-    d: path("M0,650 C300,450 1000,850 1440,700 L1440,900 L0,900 Z");
+    d: path("M0,650 C300,450 1000,850 1440,700 L1440,1200 L0,1200 Z");
   }
 }
 
@@ -1717,6 +1717,7 @@ footer,
 header {
   background: transparent !important;
 }
+
 
 
 
