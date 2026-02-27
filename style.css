@@ -1395,7 +1395,7 @@ body {
 }
 
 
-.solution-card::before {
+.contact-card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1415,13 +1415,13 @@ body {
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px; /* 👈 ESPACIO ENTRE NOMBRE Y APELLIDO */
+  gap: 40px; /* 👈 ESPACIO ENTRE NOMBRE Y APELLIDO */
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px; /* 👈 ESPACIO ENTRE CAMPOS */
+  margin-bottom: 20px; /* 👈 ESPACIO ENTRE CAMPOS */
 }
 
 .form-group label {
@@ -1819,6 +1819,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
