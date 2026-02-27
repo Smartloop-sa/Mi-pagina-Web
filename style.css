@@ -1680,23 +1680,34 @@ footer {
   width: 100%;
   bottom: 0;              /* 👈 que nazca desde abajo */
   height: 75vh;           /* 👈 controla cuánto sube */
-  animation: float 12s ease-in-out infinite alternate;
+ 
 }
-
 .wave-back {
-  animation-duration: 16s;
+  .wave-back path {
+  animation: waveBack 8s ease-in-out infinite alternate;
+}
 }
 
 .wave-front {
-  animation-duration: 10s;
+  .wave-front path {
+  animation: waveFront 6s ease-in-out infinite alternate;
+}
+}
+@keyframes waveBack {
+  0% {
+    d: path("M0,650 C300,500 1100,750 1440,650 L1440,900 L0,900 Z");
+  }
+  100% {
+    d: path("M0,650 C400,400 1000,850 1440,700 L1440,900 L0,900 Z");
+  }
 }
 
-@keyframes float {
-  from {
-    transform: translateY(0px);
+@keyframes waveFront {
+  0% {
+    d: path("M0,700 C400,620 1000,720 1440,680 L1440,900 L0,900 Z");
   }
-  to {
-    transform: translateY(-40px);
+  100% {
+    d: path("M0,700 C450,650 950,750 1440,720 L1440,900 L0,900 Z");
   }
 }
 
@@ -1706,6 +1717,7 @@ footer,
 header {
   background: transparent !important;
 }
+
 
 
 
