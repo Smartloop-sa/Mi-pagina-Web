@@ -1014,12 +1014,6 @@ body {
   gap: 40px;
 }
 
-.contact-form,
-.contact-info {
-  background: #1f2937;
-  border-radius: 16px;
-  padding: 40px;
-}
 
 .contact-form h2,
 .contact-info h2 {
@@ -1820,6 +1814,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
