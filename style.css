@@ -1464,9 +1464,9 @@ textarea {
    FOOTER ESTILO SAITECH
 ========================= */
 
-.main-footer {
+ .main-footer {
   background: linear-gradient(to bottom, #0b1623, #0a1320);
-  color: #cbd5e1;
+  color: rgba(255,255,255,0.88); /* 👈 más intenso */
   padding: 50px 0 0 0;   /* 👈 menos aire arriba */
   margin-top: 40px;      /* 👈 antes 120px */
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -1500,7 +1500,7 @@ textarea {
 
 .footer-column a {
   text-decoration: none;
-  color: #94a3b8;
+  color: rgba(255,255,255,0.85); /* 👈 más blanco */
   transition: 0.3s;
 }
 
@@ -1510,7 +1510,7 @@ textarea {
 
 .footer-column p {
   margin: 8px 0;
-  color: #94a3b8;
+  color: rgba(255,255,255,0.82);
   line-height: 1.6;
 }
 
@@ -1527,7 +1527,7 @@ textarea {
   text-align: center;
   padding: 22px;
   font-size: 14px;
-  color: #94a3b8;
+  color: rgba(255,255,255,0.75);
 }
 .legal-page {
   padding: 120px 20px 80px;
@@ -1717,6 +1717,7 @@ footer,
 header {
   background: transparent !important;
 }
+
 
 
 
