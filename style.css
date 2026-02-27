@@ -18,8 +18,8 @@ body {
   color: var(--color-text);
 }
 .hero {
-  padding-top: 120px;   /* espacio real debajo del navbar */
-  padding-bottom: 60px;
+  padding-top: 130px;   /* espacio real debajo del navbar */
+  padding-bottom: 50px;
 
   display: flex;
   flex-direction: column;
@@ -1813,6 +1813,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
