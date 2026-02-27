@@ -484,7 +484,7 @@ body {
 
 /* RECUADROS */
 .solution-card {
-  background: rgba(15, 23, 42, 0.55); /* azul oscuro translúcido */
+  background: rgba(15, 23, 42, 0.25); /* azul oscuro translúcido */
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 
@@ -1741,6 +1741,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
