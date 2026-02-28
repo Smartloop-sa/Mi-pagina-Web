@@ -4,8 +4,8 @@
   --color-secondary: #1e293b;
   --color-text: #e5e7eb;
   --color-muted: #9ca3af;
-   --navbar-height: 72px;
-  --section-spacing: 40px; /* aquí controlas qué tan pegado quieres todo */
+   --navbar-height: 80px;
+  --section-spacing: 60px; /* aquí controlas qué tan pegado quieres todo */
 }
 .light-theme {
   --color-bg: #f8fafc;
@@ -1755,6 +1755,7 @@ main,
 .legal-page {
   padding-top: calc(var(--navbar-height) + var(--section-spacing));
 }
+
 
 
 
