@@ -14,6 +14,10 @@
   --color-muted: #475569;
 }
 body {
+  padding-top: 72px;
+} 
+
+{
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: var(--color-bg);
@@ -1755,6 +1759,7 @@ main,
 .legal-page {
   padding-top: calc(var(--navbar-height) + var(--section-spacing));
 }
+
 
 
 
