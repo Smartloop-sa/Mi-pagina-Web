@@ -14,6 +14,7 @@
   --color-muted: #475569;
 }
 body {
+   margin: 0;
   padding-top: 72px;
 } 
 
@@ -26,7 +27,8 @@ body {
 }
 .hero {
    padding-bottom: 100px;
-
+  text-align: center;
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
 }
@@ -1759,6 +1761,7 @@ main,
 .legal-page {
   padding-top: calc(var(--navbar-height) + var(--section-spacing));
 }
+
 
 
 
