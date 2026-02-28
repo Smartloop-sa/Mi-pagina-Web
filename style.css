@@ -1815,6 +1815,38 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* EFECTO ILUMINADO GLOBAL */
+
+.solution-card {
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.solution-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(124, 108, 255, 0.15),
+    transparent 60%
+  );
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.solution-card:hover::before {
+  opacity: 1;
+}
+
+.solution-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(56,189,248,0.25);
+}
 
 
 
