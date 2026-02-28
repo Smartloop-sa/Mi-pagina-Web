@@ -203,10 +203,48 @@ body {
    FOOTER
 ========================================================= */
 
+/* =========================================================
+   FOOTER TRANSPARENTE
+========================================================= */
+
 .main-footer {
-  background: linear-gradient(to bottom, #0b1623, #0a1320);
-  padding: 50px 0 0;
+  background: transparent;
+  padding: 60px 0 0;
   border-top: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column h4 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: var(--color-muted);
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: var(--color-primary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  color: var(--color-muted);
+  border-top: 1px solid rgba(255,255,255,0.06);
 }
 
 .footer-container {
@@ -297,3 +335,4 @@ body {
   }
 
 }
+
