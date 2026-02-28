@@ -13,7 +13,7 @@
   --color-text: #020617;
   --color-muted: #475569;
 }
-body body {
+body {
   margin: 0;
   padding-top: 72px;
   font-family: 'Inter', sans-serif;
@@ -41,7 +41,7 @@ body body {
 }
 
 
-. button:hover {
+button:hover {
   transform: translateY(-2px);
   box-shadow: 0 15px 40px rgba(37, 99, 235, 0.6);
 }
@@ -211,7 +211,7 @@ body body {
 
 
 
-. p {
+p {
   font-size: 1.15rem;
   color: #cbd5e1;
   max-width: 720px;
@@ -1650,8 +1650,9 @@ h1 {
   }
 }
 section,
-footer {
-  background: transparent !important;
+footer,
+header {
+  background: transparent;
 }
 .hero-background {
   position: fixed;
@@ -1709,11 +1710,7 @@ footer {
 }
 
 /* IMPORTANTE */
-section,
-footer,
-header {
-  background: transparent !important;
-}
+
 .gradient-title {
   font-size: 3.6rem;
   font-weight: 800;
@@ -1730,6 +1727,7 @@ header {
    position: relative;
   z-index: 1;
 }
+
 
 
 
