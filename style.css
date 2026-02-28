@@ -1005,7 +1005,7 @@ body {
 }
 
 .contact-section {
-  padding: 80px 5%;
+  padding: 30px 5% 60px;
 }
 
 .contact-grid {
@@ -1365,7 +1365,7 @@ body {
   gap: 60px;
   width: 90%;
   max-width: 1200px;
-  margin: 80px auto;
+   margin: 20px auto 80px;
 }
 
 .contact-form,
@@ -1815,3 +1815,4 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
