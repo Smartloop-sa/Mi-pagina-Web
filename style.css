@@ -1,7 +1,3 @@
-/* =========================================================
-   VARIABLES
-========================================================= */
-
 :root {
   --color-bg: #0b1120;
   --color-primary: #2563eb;
@@ -16,11 +12,6 @@
   --color-text: #020617;
   --color-muted: #475569;
 }
-
-/* =========================================================
-   BASE
-========================================================= */
-
 body {
   margin: 0;
   padding-top: 72px;
@@ -29,11 +20,6 @@ body {
   color: var(--color-text);
   overflow-x: hidden;
 }
-
-/* =========================================================
-   NAVBAR
-========================================================= */
-
 .navbar {
   position: fixed;
   top: 0;
@@ -84,11 +70,6 @@ body {
 .nav-center a:hover::after {
   width: 100%;
 }
-
-/* =========================================================
-   HERO
-========================================================= */
-
 .hero {
   min-height: 90vh;
   padding: 120px 20px 80px;
@@ -112,9 +93,6 @@ body {
   color: #cbd5e1;
   margin-bottom: 44px;
 }
-
-/* BOTONES */
-
 .btn {
   padding: 14px 28px;
   border-radius: 8px;
@@ -140,11 +118,6 @@ body {
 .btn.secondary:hover {
   background: rgba(255,255,255,0.08);
 }
-
-/* =========================================================
-   FEATURES
-========================================================= */
-
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -165,11 +138,6 @@ body {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
-
-/* =========================================================
-   SOLUTIONS
-========================================================= */
-
 .solutions-section {
   padding: 80px 10%;
   text-align: center;
@@ -198,15 +166,6 @@ body {
 .solution-card:hover {
   transform: translateY(-6px);
 }
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-/* =========================================================
-   FOOTER TRANSPARENTE
-========================================================= */
-
 .main-footer {
   background: transparent;
   padding: 60px 0 0;
@@ -246,43 +205,6 @@ body {
   color: var(--color-muted);
   border-top: 1px solid rgba(255,255,255,0.06);
 }
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.footer-column h4 {
-  font-size: 15px;
-  margin-bottom: 25px;
-  color: white;
-}
-
-.footer-column a {
-  text-decoration: none;
-  color: rgba(255,255,255,0.85);
-  transition: 0.3s;
-}
-
-.footer-column a:hover {
-  color: #facc15;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 22px;
-  font-size: 14px;
-  color: rgba(255,255,255,0.75);
-}
-
-/* =========================================================
-   ANIMATED BACKGROUND
-========================================================= */
-
 .hero-background {
   position: fixed;
   inset: 0;
@@ -306,24 +228,6 @@ body {
   height: 120vh;
   pointer-events: none;
 }
-
-/* =========================================================
-   TITULOS GRADIENTE
-========================================================= */
-
-.gradient-title {
-  font-size: 3.6rem;
-  font-weight: 800;
-  text-align: center;
-  background: linear-gradient(90deg, #7c6cff, #38bdf8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
 @media (max-width: 900px) {
 
   .footer-container {
