@@ -1911,6 +1911,37 @@ header {
   transform: translateY(-8px);
   box-shadow: 0 25px 50px rgba(56,189,248,0.25);
 }
+/* EFECTO ILUMINADO INDEX */
+
+.feature-card {
+  position: relative;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(124, 108, 255, 0.15),
+    transparent 60%
+  );
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(56,189,248,0.25);
+}
 
 
 
