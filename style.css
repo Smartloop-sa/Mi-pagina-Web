@@ -990,7 +990,7 @@ body {
 }
 .contact-hero {
   text-align: center;
-  padding: 120px 20px 60px;
+  padding: 90px 20px 20px;
 }
 
 .contact-hero h1 {
@@ -1365,7 +1365,7 @@ body {
   gap: 60px;
   width: 90%;
   max-width: 1200px;
-   margin: 20px auto 80px;
+   margin: 0px auto 60px;
 }
 
 .contact-form,
@@ -1942,6 +1942,7 @@ header {
   transform: translateY(-8px);
   box-shadow: 0 25px 50px rgba(56,189,248,0.25);
 }
+
 
 
 
