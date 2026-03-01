@@ -359,7 +359,7 @@ body {
 
 .footer {
   background: transparent;
-  padding: 80px 20px;
+  padding: 20px 20px;
 }
 
 .footer-container {
@@ -380,7 +380,7 @@ body {
   color: #cbd5e1;
   font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .social-icons {
@@ -410,7 +410,7 @@ body {
 
 .footer-column h4 {
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .footer-column ul {
@@ -1554,7 +1554,7 @@ textarea {
  .main-footer {
   background: linear-gradient(to bottom, #0b1623, #0a1320);
   color: rgba(255,255,255,0.88); /* 👈 más intenso */
-  padding: 30px 0 0 0;   /* 👈 menos aire arriba */
+  padding: 20px 0 0 0;   /* 👈 menos aire arriba */
   margin-top: 10px;      /* 👈 antes 120px */
   border-top: 1px solid rgba(255,255,255,0.08);
 }
@@ -1562,7 +1562,7 @@ textarea {
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px 35px 40px; /* 👈 antes 50px */
+  padding: 0 20px 20px 20px; /* 👈 antes 50px */
   display: flex;
   justify-content: space-between;
   gap: 40px; /* 👈 antes 60px */
@@ -1612,7 +1612,7 @@ textarea {
 /* Parte inferior */
 .footer-bottom {
   text-align: center;
-  padding: 0px;
+  padding: 20px;
   font-size: 14px;
   color: rgba(255,255,255,0.75);
 }
@@ -1947,9 +1947,10 @@ header {
 }
 
 .footer {
-  padding: 40px 20px; /* antes 80px */
+  padding: 20px 20px; /* antes 80px */
   margin-top: 0;
 }
+
 
 
 
