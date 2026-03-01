@@ -1554,8 +1554,8 @@ textarea {
  .main-footer {
   background: linear-gradient(to bottom, #0b1623, #0a1320);
   color: rgba(255,255,255,0.88); /* 👈 más intenso */
-  padding: 50px 0 0 0;   /* 👈 menos aire arriba */
-  margin-top: 40px;      /* 👈 antes 120px */
+  padding: 30px 0 0 0;   /* 👈 menos aire arriba */
+  margin-top: 10px;      /* 👈 antes 120px */
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -1612,7 +1612,7 @@ textarea {
 /* Parte inferior */
 .footer-bottom {
   text-align: center;
-  padding: 22px;
+  padding: 10px;
   font-size: 14px;
   color: rgba(255,255,255,0.75);
 }
@@ -1942,6 +1942,7 @@ header {
   transform: translateY(-8px);
   box-shadow: 0 25px 50px rgba(56,189,248,0.25);
 }
+
 
 
 
