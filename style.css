@@ -18,11 +18,11 @@ body {
   color: var(--color-text);
 }
 .hero {
-  min-height: 90vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 80px;
+  padding-top: 75px;
 }
 .hero h1 {
   font-size: 3rem;
@@ -1603,7 +1603,7 @@ textarea {
 
 /* Línea divisoria elegante */
 .footer-divider {
-  height: 1px;
+  height: 20px;
   background: rgba(255,255,255,0.08);
   max-width: 1200px;
   margin: 0 auto;
@@ -1617,7 +1617,7 @@ textarea {
   color: rgba(255,255,255,0.75);
 }
 .legal-page {
-  padding: 120px 20px 80px;
+  padding: 80px 20px 80px;   antes 120 hoy
   background: #0a1320;
   color: #cbd5e1;
   min-height: 100vh;
@@ -1950,6 +1950,7 @@ header {
   padding: 40px 20px; /* antes 80px */
   margin-top: 0;
 }
+
 
 
 
