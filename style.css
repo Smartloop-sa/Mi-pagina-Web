@@ -354,7 +354,7 @@ body {
 .footer-divider {
   height: 1px;
   background: rgba(255,255,255,0.08);
-  margin-top: 120px;
+  margin-top: 40px;
 }
 
 .footer {
@@ -1941,6 +1941,14 @@ header {
 .feature-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 25px 50px rgba(56,189,248,0.25);
+}
+.footer-divider {
+  margin-top: 40px; /* antes 120px */
+}
+
+.footer {
+  padding: 40px 20px; /* antes 80px */
+  margin-top: 0;
 }
 
 
