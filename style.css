@@ -1967,23 +1967,30 @@ header {
     flex-direction: row;   /* 🔥 FORZAMOS HORIZONTAL */
     flex-wrap: wrap;       /* Si no caben, bajan ordenados */
     justify-content: center;
-    gap: 15px;
+    gap: 8px;
     margin-top: 10px;
   }
 
+   /* Contenedor ES / EN / Luna */
   .nav-right {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6px;             /* 🔥 más pegados */
+    margin-top: 5px;      /* 🔥 menos separación vertical */
   }
 
   /* Botones ES / EN */
   .lang-switch {
     display: flex;
     flex-direction: row;   /* 🔥 Siempre horizontal */
+    gap: 4px;
   }
 
 }
 
   
+
 
 
 
