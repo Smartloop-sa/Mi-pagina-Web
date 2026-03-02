@@ -1959,9 +1959,14 @@ header {
   .navbar {
     flex-direction: column;
     align-items: center;
-    padding: 15px 20px;
+    padding: 8px 10px;
   }
-
+ /* Logo */
+  .navbar img {
+    max-height: 45px;    /* 🔥 un poco más pequeño */
+    margin-bottom: 5px;  /* 🔥 más cerca de los botones */
+  }
+  
   /* 👇 Aquí está la clave */
   .nav-center {
     flex-direction: row;   /* 🔥 FORZAMOS HORIZONTAL */
@@ -1970,14 +1975,17 @@ header {
     gap: 8px;
     margin-top: 10px;
   }
-
+.nav-center a {
+    font-size: 13px;     /* 🔥 texto más compacto */
+    padding: 4px 6px;    /* 🔥 menos espacio interno */
+  }
    /* Contenedor ES / EN / Luna */
   .nav-right {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 6px;             /* 🔥 más pegados */
-    margin-top: 5px;      /* 🔥 menos separación vertical */
+    gap: 4px;             /* 🔥 más pegados */
+    margin-top: 2px;      /* 🔥 menos separación vertical */
   }
 
   /* Botones ES / EN */
@@ -1990,6 +1998,7 @@ header {
 }
 
   
+
 
 
 
