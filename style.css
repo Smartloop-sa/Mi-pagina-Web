@@ -1956,21 +1956,32 @@ header {
 
 @media (max-width: 768px) {
 
-  /* NAVBAR */
   .navbar {
     flex-direction: column;
-    padding: 15px;
+    align-items: center;
+    padding: 15px 20px;
   }
 
+  /* 👇 Aquí está la clave */
   .nav-center {
-    flex-direction: column;
+    flex-direction: row;   /* 🔥 FORZAMOS HORIZONTAL */
+    flex-wrap: wrap;       /* Si no caben, bajan ordenados */
+    justify-content: center;
     gap: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .nav-right {
-    margin-top: 15px;
+    margin-top: 10px;
   }
+
+  /* Botones ES / EN */
+  .lang-switch {
+    display: flex;
+    flex-direction: row;   /* 🔥 Siempre horizontal */
+  }
+
+}
 
   /* HERO */
   .hero {
@@ -2017,6 +2028,7 @@ header {
   }
 
 }
+
 
 
 
