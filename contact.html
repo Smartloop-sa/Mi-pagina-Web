@@ -95,56 +95,67 @@
   <div class="contact-grid">
 
     <!-- FORMULARIO -->
-    <div class="contact-form">
+    <form class="contact-form" 
+      action="https://formsubmit.co/info@smartloop-sa.com" 
+      method="POST">
+      
       <h2>Contactanos</h2>
 
       <div class="form-row">
         <div class="form-group">
           <label>Nombres *</label>
-          <input type="text" placeholder="John">
+          <input type="text" name="nombres" placeholder="John" required>
         </div>
         <div class="form-group">
           <label>Apellidos *</label>
-          <input type="text" placeholder="Doe">
+          <input type="text" name="apellidos" placeholder="Doe" required>
         </div>
       </div>
 
       <div class="form-group">
         <label>Dirección de correo electronico *</label>
-        <input type="email" placeholder="john.doe@company.com">
+        <input type="email" name="email" placeholder="john.doe@company.com" required>
       </div>
 
       <div class="form-group">
         <label>Compañia</label>
-        <input type="text" placeholder="Your Company">
+        <input type="text" name="compania" placeholder="Your Company">
       </div>
 
       <div class="form-group">
   <label>Número de contacto</label>
-  <input type="text" placeholder="+1 (555) 123-4567">
+ <input type="text" name="telefono" placeholder="+1 (555) 123-4567">
 </div>
 
 <div class="form-group">
   <label>Tipo de servicio *</label>
-  <select required>
-    <option selected disabled>Selecciona un servicio</option>
-    <option>Consultora de IA</option>
-    <option>Integración IoT</option>
-    <option>Automatización de procesos</option>
-    <option>Entrenamiento y soporte</option>
-    <option>Desarrollo personalizado</option>
-    <option>Otro</option>
-  </select>
+  <select name="servicio" required>
+    <option value="" disabled selected>Selecciona un servicio</option>
+  <option value="Consultoria IA">Consultora de IA</option>
+  <option value="Integracion IoT">Integración IoT</option>
+  <option value="Automatizacion">Automatización de procesos</option>
+  <option value="Entrenamiento">Entrenamiento y soporte</option>
+  <option value="Desarrollo Personalizado">Desarrollo personalizado</option>
+  <option value="Otro">Otro</option>
+</select>
 </div>
 
 <div class="form-group">
   <label>Descripción de tu proyecto *</label>
-  <textarea placeholder="Cuéntanos qué necesitas, qué problema quieres resolver y el alcance del proyecto..."></textarea>
+  <textarea name="descripcion" required 
+placeholder="Cuéntanos qué necesitas, qué problema quieres resolver y el alcance del proyecto..."></textarea>
+  
 </div>
+      
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="Nuevo mensaje desde Smartloop">
+<input type="hidden" name="_next" value="https://smartloop-sa.com/gracias.html">
 
-
-      <button class="btn-primary">Enviar Mensaje</button>
-    </div>
+      <button type="submit" class="btn-primary">
+  Enviar Mensaje
+</button>
+      </form>
+    
 
     <!-- INFO -->
     <div class="contact-info">
@@ -282,6 +293,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
