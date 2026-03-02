@@ -1985,6 +1985,7 @@ header {
 
   /* HERO */
   .hero {
+    padding-top: 140px;
     padding: 80px 20px;
     text-align: center;
   }
@@ -2028,6 +2029,7 @@ header {
   }
 
 }
+
 
 
 
