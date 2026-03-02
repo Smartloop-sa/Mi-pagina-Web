@@ -1967,7 +1967,7 @@ header {
  /* Logo */
   .navbar img {
     max-height: 45px;    /* 🔥 un poco más pequeño */
-    margin-bottom: -10px;  /* 🔥 más cerca de los botones */
+    margin-bottom: -5px;  /* 🔥 más cerca de los botones */
   }
   
   /* 👇 Aquí está la clave */
@@ -1994,6 +1994,7 @@ header {
 
 
   
+
 
 
 
