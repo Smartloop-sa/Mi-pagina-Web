@@ -1984,23 +1984,17 @@ header {
   }
    /* Contenedor ES / EN / Luna */
   .nav-right {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     gap: 4px;             /* 🔥 más pegados */
     margin-top: 2px;      /* 🔥 menos separación vertical */
   }
 
-  /* Botones ES / EN */
-  .lang-switch {
-    display: flex;
-    flex-direction: row;   /* 🔥 Siempre horizontal */
-    gap: 4px;
-  }
 
-}
 
   
+
 
 
 
