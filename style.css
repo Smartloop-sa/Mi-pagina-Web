@@ -1981,6 +1981,8 @@ header {
 .nav-center a {
     font-size: 12px;     /* 🔥 texto más compacto */
     padding: 2px 4px;    /* 🔥 menos espacio interno */
+   font-weight: 500;
+    letter-spacing: 0.5px;
   }
    /* Contenedor ES / EN / Luna */
   .nav-right {
@@ -1994,6 +1996,7 @@ header {
 
 
   
+
 
 
 
