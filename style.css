@@ -1992,10 +1992,19 @@ header {
     gap: 4px;             /* 🔥 más pegados */
     margin-top: 2px;      /* 🔥 menos separación vertical */
   }
-
+/* 🔥 FORCE MOBILE NAV SIZE */
+@media (max-width: 768px) {
+  header.navbar nav.nav-center a {
+    font-size: 15px !important;
+    padding: 6px 8px !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+}
 
 
   
+
 
 
 
