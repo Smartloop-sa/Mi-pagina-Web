@@ -1979,8 +1979,8 @@ header {
     margin-top: 0px;
   }
 .nav-center a {
-    font-size: 12px;     /* 🔥 texto más compacto */
-    padding: 2px 4px;    /* 🔥 menos espacio interno */
+    font-size: 13px;     /* 🔥 texto más compacto */
+    padding: 4px 6px;    /* 🔥 menos espacio interno */
    font-weight: 500;
     letter-spacing: 0.5px;
   }
@@ -1996,6 +1996,7 @@ header {
 
 
   
+
 
 
 
