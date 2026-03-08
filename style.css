@@ -1996,7 +1996,7 @@ header {
 @media (max-width: 768px) {
   header.navbar nav.nav-center a {
     font-size: 7px !important;
-    padding: 6px 8px !important;
+    padding: 5px 7px !important;
     font-weight: 600;
     letter-spacing: 0.5px;
   }
@@ -2004,6 +2004,7 @@ header {
 
 
   
+
 
 
 
